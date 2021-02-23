@@ -1,0 +1,21 @@
+main: com.github.tmeserve.DeathSwap
+name: DeathSwap
+version: 0.1.11
+
+commands:
+  start:
+    description: Starts the death swap madness
+    usage: /<command>
+    permissions: deathswap.host.start
+  swap:
+    description: Used for testing
+    usage: /<command>
+    permission: deathswap.testing.swap
+
+permissions:
+  deathswap.testing.swap:
+    description: The permission for the swap test command
+    default: op
+  deathswap.host.start:
+    description: Permission for the start command
+    default: op
